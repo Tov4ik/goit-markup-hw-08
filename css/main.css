@@ -694,10 +694,11 @@ body {
     max-width: 270px;
   }
 }
-.tasks {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .tasks {
+    display: none;
+  }
 }
-
 @media screen and (min-width: 1200px) {
   .tasks {
     display: block;
