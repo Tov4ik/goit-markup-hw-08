@@ -983,6 +983,17 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer-form-wrapper {
+    margin: 0;
+    width: auto;
+  }
+}
 .projects-sort-list {
   text-align: center;
   width: 100%;
