@@ -1,3 +1,13 @@
+.tasks {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .tasks {
+    display: block;
+  }
+}
+
 .tasks-list {
   display: flex;
   justify-content: space-between;

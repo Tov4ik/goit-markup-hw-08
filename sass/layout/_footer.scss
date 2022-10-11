@@ -2,16 +2,24 @@
   background-color: #2f303a;
   position: relative;
   z-index: 1;
+  padding-bottom: 60px;
 }
 
 .footer__container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
 }
 
 .footer-logo {
   color: #fff;
+  font-size: 24px;
+  line-height: 28px;
   padding-top: 60px;
   padding-bottom: 20px;
+  text-align: center;
+  margin-right: 0;
 }
 
 // =================== footer-address =====================
@@ -22,7 +30,8 @@
   line-height: 24px;
   color: #ffffff;
   font-style: normal;
-  padding-bottom: 60px;
+  text-align: center;
+  // padding-bottom: 60px;
 
   & p {
     padding-bottom: 9px;
@@ -36,15 +45,18 @@
 // =================== footer-social =====================
 
 .footer-social {
-  padding-top: 72px;
-  padding-left: 70px;
+  // padding-top: 72px;
+  // padding-left: 70px;
 }
 
 .footer-social-text {
   color: #fff;
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .footer-social-list {
@@ -84,11 +96,14 @@
 // =================== footer-form =====================
 
 .footer-form-wrapper {
-  padding: 72px 0 0 93px;
+  // padding: 72px 0 0 93px;
+  text-align: center;
 }
 
 .footer-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-form-caption {
@@ -99,19 +114,22 @@
 }
 
 .footer-form-field {
-  width: 358px;
+  width: 450px;
+  max-width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 16px;
 }
 
 .footer-form-btn {
   display: flex;
   align-items: center;
+  width: 200px;
   background: var(--accent-color);
   color: #fff;
   font-weight: 700;
@@ -127,4 +145,16 @@
 .footer-btn-icon {
   margin-left: 10px;
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-form-wrapper {
+    margin: 0 auto;
+  }
 }

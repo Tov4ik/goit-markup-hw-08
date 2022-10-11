@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .clients-div {
@@ -26,5 +27,25 @@
   .clients-div:hover > &,
   .clients-div:focus > & {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  .clients-div {
+    width: 226px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-div {
+    max-width: 210px;
   }
 }

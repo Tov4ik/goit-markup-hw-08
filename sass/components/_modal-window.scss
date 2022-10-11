@@ -4,6 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
+  max-width: calc(100% - 30px);
   height: 580px;
   background-color: #fff;
   scale: 1;
