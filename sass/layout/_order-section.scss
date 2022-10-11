@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/order/mobile/hero.jpg);
+    url(../images/order/mobile/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px 400px;
@@ -14,7 +14,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .order {
-    background-image: url(./images/order/mobile/hero@2x.jpg);
+    background-image: url(../images/order/mobile/hero@2x.jpg);
   }
 }
 
@@ -63,7 +63,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .order {
-      background-image: url(./images/order/tablet/hero@2x.jpg);
+      background-image: url(../images/order/tablet/hero@2x.jpg);
     }
   }
 }
@@ -84,7 +84,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .order {
-      background-image: url(./images/order/desktop/hero@2x.jpg);
+      background-image: url(../images/order/desktop/hero@2x.jpg);
     }
   }
 }
