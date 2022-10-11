@@ -671,6 +671,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features-item_text {
@@ -992,6 +993,16 @@ body {
   .footer-form-wrapper {
     margin: 0;
     width: auto;
+    text-align: left;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-form-field {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 .projects-sort-list {

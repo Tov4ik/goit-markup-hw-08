@@ -170,5 +170,20 @@
   .footer-form-wrapper {
     margin: 0;
     width: auto;
+    text-align: left;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    // text-align: left;
+  }
+
+  .footer-form-field {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
