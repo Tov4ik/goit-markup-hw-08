@@ -644,10 +644,6 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/desktop/hero@2x.jpg);
   }
 }
-.features {
-  padding-bottom: 0;
-}
-
 .features-list {
   display: flex;
   justify-content: space-between;
