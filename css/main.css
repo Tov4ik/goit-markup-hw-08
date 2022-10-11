@@ -578,7 +578,7 @@ body {
 }
 .order {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/order/mobile/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/order/mobile/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px 400px;
@@ -586,7 +586,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
-    background-image: url(./images/order/mobile/hero@2x.jpg);
+    background-image: url("./images/order/mobile/hero@2x.jpg");
   }
 }
 .order-container {
@@ -628,7 +628,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .order {
-    background-image: url(./images/order/tablet/hero@2x.jpg);
+    background-image: url(../images/order/tablet/hero@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -641,7 +641,7 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .order {
-    background-image: url(./images/order/desktop/hero@2x.jpg);
+    background-image: url(../images/order/desktop/hero@2x.jpg);
   }
 }
 .features {
@@ -702,30 +702,26 @@ body {
   .tasks {
     display: block;
   }
+  .tasks-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tasks-item > a {
+    position: relative;
+  }
+  .tasks-label-div {
+    width: 370px;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    padding: 27px 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .tasks-label-text {
+    text-transform: uppercase;
+    color: #fff;
+  }
 }
-.tasks-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tasks-item > a {
-  position: relative;
-}
-
-.tasks-label-div {
-  width: 370px;
-  background-color: rgba(47, 48, 58, 0.8);
-  text-align: center;
-  padding: 27px 0;
-  position: absolute;
-  bottom: 0;
-}
-
-.tasks-label-text {
-  text-transform: uppercase;
-  color: #fff;
-}
-
 @media screen and (max-width: 767px) {
   .team-item:not(:last-child) {
     margin-bottom: 30px;
