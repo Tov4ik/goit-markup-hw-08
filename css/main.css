@@ -690,6 +690,10 @@ body {
     max-width: 270px;
   }
 }
+.mobile-menu.is-open {
+  overflow: auto;
+}
+
 @media screen and (max-width: 1199px) {
   .tasks {
     display: none;
