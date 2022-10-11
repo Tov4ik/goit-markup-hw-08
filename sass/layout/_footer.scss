@@ -98,6 +98,7 @@
 .footer-form-wrapper {
   // padding: 72px 0 0 93px;
   text-align: center;
+  width: 100%;
 }
 
 .footer-form {
@@ -121,7 +122,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 12px;
+  // margin-right: 12px;
   margin-bottom: 20px;
   padding-left: 16px;
 }
