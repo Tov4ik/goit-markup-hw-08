@@ -562,7 +562,7 @@ body {
 }
 .order {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/order/mobile/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/order/mobile/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px 400px;
@@ -570,7 +570,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
-    background-image: url(../../images/order/mobile/hero@2x.jpg);
+    background-image: url(./images/order/mobile/hero@2x.jpg);
   }
 }
 .order-container {
@@ -606,26 +606,26 @@ body {
 @media screen and (min-width: 768px) {
   .order {
     background-size: 768px 400px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/order/tablet/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/order/tablet/hero.jpg);
     background-position: top;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .order {
-    background-image: url(../../images/order/tablet/hero@2x.jpg);
+    background-image: url(./images/order/tablet/hero@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .order {
     background-size: 1600px 600px;
     padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/order/desktop/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/order/desktop/hero.jpg);
     background-position: top;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .order {
-    background-image: url(../../images/order/desktop/hero@2x.jpg);
+    background-image: url(./images/order/desktop/hero@2x.jpg);
   }
 }
 .features {
