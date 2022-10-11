@@ -1,0 +1,80 @@
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  padding-bottom: 30px;
+
+  & img {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
+
+.team-item-text {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-name {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.team-job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-text-color);
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 0 32px;
+}
+
+.team-social-div {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 50%;
+  transition: background-color var(--primary-transition-timing);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.team-social-icon {
+  fill: var(--primary-icon-color);
+  transition: fill var(--primary-transition-timing);
+
+  .team-social-div:hover > &,
+  .team-social-div:focus > & {
+    fill: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

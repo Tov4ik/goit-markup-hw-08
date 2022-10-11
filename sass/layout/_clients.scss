@@ -1,0 +1,30 @@
+.clients-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-div {
+  width: 170px;
+  height: 92px;
+  text-align: center;
+  padding: 16px 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color var(--primary-transition-timing);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients-logo {
+  fill: var(--primary-icon-color);
+  transition: fill var(--primary-transition-timing);
+
+  .clients-div:hover > &,
+  .clients-div:focus > & {
+    fill: var(--accent-color);
+  }
+}

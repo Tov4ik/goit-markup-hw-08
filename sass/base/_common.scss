@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--primary-transition-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover > .contacts__icon,
+  &:focus > .contacts__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.list,
+.list li {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}

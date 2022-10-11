@@ -1,0 +1,149 @@
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .header {
+    padding-top: 21px;
+  }
+
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000;
+    margin-right: 87px;
+
+    & .link:hover,
+    & .link:focus {
+      color: inherit;
+    }
+
+    & span {
+      color: var(--accent-color);
+    }
+  }
+
+  .navbar {
+    display: flex;
+    width: 282px;
+    margin-right: 96px;
+  }
+
+  .navbar__link_active {
+    color: var(--accent-color);
+    padding-bottom: 21px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: var(--accent-color);
+      border-radius: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: -1px;
+    }
+  }
+
+  .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+
+  .contacts__link {
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts__icon {
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
+    transition: fill var(--primary-transition-timing);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    padding: 0;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .logo {
+    margin-right: 92px;
+  }
+
+  .navbar {
+    margin-right: 315px;
+  }
+
+  .navbar__item {
+    margin-right: 50px;
+  }
+
+  .navbar__link_active {
+    padding-bottom: 32px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.02em;
+
+    .header__email {
+      margin-right: 30px;
+    }
+  }
+}

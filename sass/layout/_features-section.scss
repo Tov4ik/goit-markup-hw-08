@@ -1,0 +1,34 @@
+.features {
+  padding-bottom: 0;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-image {
+  text-align: center;
+  padding: 25px 0;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-item-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.features-item_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+}

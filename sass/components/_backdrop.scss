@@ -1,0 +1,26 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--primary-transition-timing),
+    visibility var(--primary-transition-timing);
+
+  .modal {
+    transition: scale var(--primary-transition-timing);
+  }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  .modal {
+    scale: 0;
+    transition: scale var(--primary-transition-timing);
+  }
+}
